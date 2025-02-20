@@ -1,0 +1,2 @@
+# bulgar_TrashBins_config_example
+bulgar_TrashBins_config_example
