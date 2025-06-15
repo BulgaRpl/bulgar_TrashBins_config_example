@@ -25,6 +25,7 @@ Config.Framework = 'VORP' -- or 'RSGCore'
 -- Keys
 Config.BlockTrashIfPlayerIsNearRange = 3.0 -- When someone is in your range u cannot take actions on Trash Bins this is to prevent exploits.
 Config.InteractionRadius = 1.5 -- For Trash Bins
+Config.NeedToHoldKeyToShowPrompts = true -- If false, the players won't have to to hold down the key (Config.HoldKeyToShowPrompts) if next to the dumpster to view the prompts not recommended.
 Config.HoldKeyToShowPrompts = 0x760A9C6F -- G
 Config.SearchKey = 0x41AC83D1
 Config.StorageKey = 0xFF8109D8
@@ -61,9 +62,9 @@ Config.TrashBins = {
     { -- Saint Denis 12
         coords = vector3(ITS CONFIGURED HERE AFTER U GET THE SCRIPT), -- Trash Bin Coords
         loot = {
-            { item = "EXAMPLE ITEM", chance = 50, minamount = 1, maxamount = 3 },	-- 50% drop chance, drop amount between "minamount" and "maxamount"
-            { item = "EXAMPLE ITEM", chance = 30, minamount = 1, maxamount = 2 },	-- 30% drop chance, drop amount between "minamount" and "maxamount"
-            { item = "EXAMPLE ITEM", chance = 20, minamount = 1, maxamount = 1 }	-- 20% drop chance, drop amount between "minamount" and "maxamount"
+            { item = "EXAMPLE ITEM", label = "EXAMPLE ITEM DISPLAY NAME", chance = 50, minamount = 1, maxamount = 3 },	-- 50% drop chance, drop amount between "minamount" and "maxamount"
+            { item = "EXAMPLE ITEM", label = "EXAMPLE ITEM DISPLAY NAME", chance = 30, minamount = 1, maxamount = 2 },	-- 30% drop chance, drop amount between "minamount" and "maxamount"
+            { item = "EXAMPLE ITEM", label = "EXAMPLE ITEM DISPLAY NAME", chance = 20, minamount = 1, maxamount = 1 }	-- 20% drop chance, drop amount between "minamount" and "maxamount"
         },
         shouldSpawn = true, -- If true the script will spawn Trash Bin prop object on this coords (Make sure the Z coord is correct so it will not fly above ground)
 		storageid = "32", -- Storage ID must be unique number in " "
@@ -73,9 +74,9 @@ Config.TrashBins = {
     { -- Saint Denis 13
         coords = vector3(ITS CONFIGURED HERE AFTER U GET THE SCRIPT), -- Trash Bin Coords
         loot = {
-            { item = "EXAMPLE ITEM", chance = 50, minamount = 1, maxamount = 3 },	-- 50% drop chance, drop amount between "minamount" and "maxamount"
-            { item = "EXAMPLE ITEM", chance = 30, minamount = 1, maxamount = 2 },	-- 30% drop chance, drop amount between "minamount" and "maxamount"
-            { item = "EXAMPLE ITEM", chance = 20, minamount = 1, maxamount = 1 }	-- 20% drop chance, drop amount between "minamount" and "maxamount"
+            { item = "EXAMPLE ITEM", label = "EXAMPLE ITEM DISPLAY NAME", chance = 50, minamount = 1, maxamount = 3 },	-- 50% drop chance, drop amount between "minamount" and "maxamount"
+            { item = "EXAMPLE ITEM", label = "EXAMPLE ITEM DISPLAY NAME", chance = 30, minamount = 1, maxamount = 2 },	-- 30% drop chance, drop amount between "minamount" and "maxamount"
+            { item = "EXAMPLE ITEM", label = "EXAMPLE ITEM DISPLAY NAME", chance = 20, minamount = 1, maxamount = 1 }	-- 20% drop chance, drop amount between "minamount" and "maxamount"
         },
         shouldSpawn = true, -- If true the script will spawn Trash Bin prop object on this coords (Make sure the Z coord is correct so it will not fly above ground)
 		storageid = "33", -- Storage ID must be unique number in " "
